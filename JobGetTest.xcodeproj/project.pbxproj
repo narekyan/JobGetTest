@@ -1,0 +1,516 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB3926F6240EB95700A8FE0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3926F5240EB95700A8FE0F /* AppDelegate.swift */; };
+		EB3926FA240EB95700A8FE0F /* JobsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3926F9240EB95700A8FE0F /* JobsViewController.swift */; };
+		EB3926FD240EB95700A8FE0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB3926FB240EB95700A8FE0F /* Main.storyboard */; };
+		EB3926FF240EB96300A8FE0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB3926FE240EB96300A8FE0F /* Assets.xcassets */; };
+		EB392702240EB96300A8FE0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB392700240EB96300A8FE0F /* LaunchScreen.storyboard */; };
+		EB39270D240EB96400A8FE0F /* JobGetTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB39270C240EB96400A8FE0F /* JobGetTestTests.swift */; };
+		EB392718240ECDC900A8FE0F /* JobsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB392717240ECDC900A8FE0F /* JobsViewModel.swift */; };
+		EB39271A240ECE0000A8FE0F /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB392719240ECE0000A8FE0F /* Job.swift */; };
+		EB39271C240ED36D00A8FE0F /* JobsSourceInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB39271B240ED36D00A8FE0F /* JobsSourceInterface.swift */; };
+		EB39271E240ED79200A8FE0F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB39271D240ED79200A8FE0F /* NetworkManager.swift */; };
+		EBB4765C240ED95F005046E7 /* ZipRecruiterJobsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB4765B240ED95F005046E7 /* ZipRecruiterJobsResponse.swift */; };
+		EBB4765F240EE04D005046E7 /* JobTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB4765D240EE04D005046E7 /* JobTableViewCell.swift */; };
+		EBB47660240EE04D005046E7 /* JobTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBB4765E240EE04D005046E7 /* JobTableViewCell.xib */; };
+		EBB4766224100C67005046E7 /* ZipRecruiterJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB4766124100C67005046E7 /* ZipRecruiterJob.swift */; };
+		EBB47664241012F6005046E7 /* JobsViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB47663241012F6005046E7 /* JobsViewModelFactory.swift */; };
+		EBB47666241013E9005046E7 /* ZipRecruiterJobsSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB47665241013E8005046E7 /* ZipRecruiterJobsSource.swift */; };
+		EBB4766824101463005046E7 /* JobsSourceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB4766724101463005046E7 /* JobsSourceFactory.swift */; };
+		EBB4766A241027B8005046E7 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB47669241027B8005046E7 /* SearchBarView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EB392709240EB96400A8FE0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB3926EA240EB95700A8FE0F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB3926F1240EB95700A8FE0F;
+			remoteInfo = JobGetTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EB3926F2240EB95700A8FE0F /* JobGetTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JobGetTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB3926F5240EB95700A8FE0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EB3926F9240EB95700A8FE0F /* JobsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsViewController.swift; sourceTree = "<group>"; };
+		EB3926FC240EB95700A8FE0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EB3926FE240EB96300A8FE0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB392701240EB96300A8FE0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EB392703240EB96300A8FE0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB392708240EB96400A8FE0F /* JobGetTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JobGetTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB39270C240EB96400A8FE0F /* JobGetTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobGetTestTests.swift; sourceTree = "<group>"; };
+		EB39270E240EB96400A8FE0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB392717240ECDC900A8FE0F /* JobsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsViewModel.swift; sourceTree = "<group>"; };
+		EB392719240ECE0000A8FE0F /* Job.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
+		EB39271B240ED36D00A8FE0F /* JobsSourceInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsSourceInterface.swift; sourceTree = "<group>"; };
+		EB39271D240ED79200A8FE0F /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		EBB4765B240ED95F005046E7 /* ZipRecruiterJobsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipRecruiterJobsResponse.swift; sourceTree = "<group>"; };
+		EBB4765D240EE04D005046E7 /* JobTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobTableViewCell.swift; sourceTree = "<group>"; };
+		EBB4765E240EE04D005046E7 /* JobTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JobTableViewCell.xib; sourceTree = "<group>"; };
+		EBB4766124100C67005046E7 /* ZipRecruiterJob.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipRecruiterJob.swift; sourceTree = "<group>"; };
+		EBB47663241012F6005046E7 /* JobsViewModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsViewModelFactory.swift; sourceTree = "<group>"; };
+		EBB47665241013E8005046E7 /* ZipRecruiterJobsSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipRecruiterJobsSource.swift; sourceTree = "<group>"; };
+		EBB4766724101463005046E7 /* JobsSourceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsSourceFactory.swift; sourceTree = "<group>"; };
+		EBB47669241027B8005046E7 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB3926EF240EB95700A8FE0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB392705240EB96400A8FE0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB3926E9240EB95600A8FE0F = {
+			isa = PBXGroup;
+			children = (
+				EB3926F4240EB95700A8FE0F /* JobGetTest */,
+				EB39270B240EB96400A8FE0F /* JobGetTestTests */,
+				EB3926F3240EB95700A8FE0F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EB3926F3240EB95700A8FE0F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB3926F2240EB95700A8FE0F /* JobGetTest.app */,
+				EB392708240EB96400A8FE0F /* JobGetTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB3926F4240EB95700A8FE0F /* JobGetTest */ = {
+			isa = PBXGroup;
+			children = (
+				EB3926F5240EB95700A8FE0F /* AppDelegate.swift */,
+				EB3926F9240EB95700A8FE0F /* JobsViewController.swift */,
+				EB3926FB240EB95700A8FE0F /* Main.storyboard */,
+				EB3926FE240EB96300A8FE0F /* Assets.xcassets */,
+				EB392700240EB96300A8FE0F /* LaunchScreen.storyboard */,
+				EB392703240EB96300A8FE0F /* Info.plist */,
+				EB392717240ECDC900A8FE0F /* JobsViewModel.swift */,
+				EB392719240ECE0000A8FE0F /* Job.swift */,
+				EBB4766124100C67005046E7 /* ZipRecruiterJob.swift */,
+				EB39271B240ED36D00A8FE0F /* JobsSourceInterface.swift */,
+				EBB47665241013E8005046E7 /* ZipRecruiterJobsSource.swift */,
+				EB39271D240ED79200A8FE0F /* NetworkManager.swift */,
+				EBB4765B240ED95F005046E7 /* ZipRecruiterJobsResponse.swift */,
+				EBB4765D240EE04D005046E7 /* JobTableViewCell.swift */,
+				EBB4765E240EE04D005046E7 /* JobTableViewCell.xib */,
+				EBB47663241012F6005046E7 /* JobsViewModelFactory.swift */,
+				EBB4766724101463005046E7 /* JobsSourceFactory.swift */,
+				EBB47669241027B8005046E7 /* SearchBarView.swift */,
+			);
+			path = JobGetTest;
+			sourceTree = "<group>";
+		};
+		EB39270B240EB96400A8FE0F /* JobGetTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				EB39270C240EB96400A8FE0F /* JobGetTestTests.swift */,
+				EB39270E240EB96400A8FE0F /* Info.plist */,
+			);
+			path = JobGetTestTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB3926F1240EB95700A8FE0F /* JobGetTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB392711240EB96400A8FE0F /* Build configuration list for PBXNativeTarget "JobGetTest" */;
+			buildPhases = (
+				EB3926EE240EB95700A8FE0F /* Sources */,
+				EB3926EF240EB95700A8FE0F /* Frameworks */,
+				EB3926F0240EB95700A8FE0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JobGetTest;
+			productName = JobGetTest;
+			productReference = EB3926F2240EB95700A8FE0F /* JobGetTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EB392707240EB96400A8FE0F /* JobGetTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB392714240EB96400A8FE0F /* Build configuration list for PBXNativeTarget "JobGetTestTests" */;
+			buildPhases = (
+				EB392704240EB96400A8FE0F /* Sources */,
+				EB392705240EB96400A8FE0F /* Frameworks */,
+				EB392706240EB96400A8FE0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB39270A240EB96400A8FE0F /* PBXTargetDependency */,
+			);
+			name = JobGetTestTests;
+			productName = JobGetTestTests;
+			productReference = EB392708240EB96400A8FE0F /* JobGetTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB3926EA240EB95700A8FE0F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = nb;
+				TargetAttributes = {
+					EB3926F1240EB95700A8FE0F = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					EB392707240EB96400A8FE0F = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = EB3926F1240EB95700A8FE0F;
+					};
+				};
+			};
+			buildConfigurationList = EB3926ED240EB95700A8FE0F /* Build configuration list for PBXProject "JobGetTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB3926E9240EB95600A8FE0F;
+			productRefGroup = EB3926F3240EB95700A8FE0F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB3926F1240EB95700A8FE0F /* JobGetTest */,
+				EB392707240EB96400A8FE0F /* JobGetTestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB3926F0240EB95700A8FE0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB392702240EB96300A8FE0F /* LaunchScreen.storyboard in Resources */,
+				EB3926FF240EB96300A8FE0F /* Assets.xcassets in Resources */,
+				EB3926FD240EB95700A8FE0F /* Main.storyboard in Resources */,
+				EBB47660240EE04D005046E7 /* JobTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB392706240EB96400A8FE0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB3926EE240EB95700A8FE0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB392718240ECDC900A8FE0F /* JobsViewModel.swift in Sources */,
+				EBB4766824101463005046E7 /* JobsSourceFactory.swift in Sources */,
+				EB3926FA240EB95700A8FE0F /* JobsViewController.swift in Sources */,
+				EBB4765C240ED95F005046E7 /* ZipRecruiterJobsResponse.swift in Sources */,
+				EB3926F6240EB95700A8FE0F /* AppDelegate.swift in Sources */,
+				EB39271C240ED36D00A8FE0F /* JobsSourceInterface.swift in Sources */,
+				EB39271E240ED79200A8FE0F /* NetworkManager.swift in Sources */,
+				EBB47666241013E9005046E7 /* ZipRecruiterJobsSource.swift in Sources */,
+				EB39271A240ECE0000A8FE0F /* Job.swift in Sources */,
+				EBB4766A241027B8005046E7 /* SearchBarView.swift in Sources */,
+				EBB47664241012F6005046E7 /* JobsViewModelFactory.swift in Sources */,
+				EBB4765F240EE04D005046E7 /* JobTableViewCell.swift in Sources */,
+				EBB4766224100C67005046E7 /* ZipRecruiterJob.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB392704240EB96400A8FE0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB39270D240EB96400A8FE0F /* JobGetTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EB39270A240EB96400A8FE0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB3926F1240EB95700A8FE0F /* JobGetTest */;
+			targetProxy = EB392709240EB96400A8FE0F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EB3926FB240EB95700A8FE0F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB3926FC240EB95700A8FE0F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EB392700240EB96300A8FE0F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB392701240EB96300A8FE0F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB39270F240EB96400A8FE0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EB392710240EB96400A8FE0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB392712240EB96400A8FE0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JobGetTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = am.nb.JobGetTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EB392713240EB96400A8FE0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JobGetTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = am.nb.JobGetTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EB392715240EB96400A8FE0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JobGetTestTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = am.nb.JobGetTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JobGetTest.app/JobGetTest";
+			};
+			name = Debug;
+		};
+		EB392716240EB96400A8FE0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JobGetTestTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = am.nb.JobGetTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JobGetTest.app/JobGetTest";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB3926ED240EB95700A8FE0F /* Build configuration list for PBXProject "JobGetTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB39270F240EB96400A8FE0F /* Debug */,
+				EB392710240EB96400A8FE0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB392711240EB96400A8FE0F /* Build configuration list for PBXNativeTarget "JobGetTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB392712240EB96400A8FE0F /* Debug */,
+				EB392713240EB96400A8FE0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB392714240EB96400A8FE0F /* Build configuration list for PBXNativeTarget "JobGetTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB392715240EB96400A8FE0F /* Debug */,
+				EB392716240EB96400A8FE0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB3926EA240EB95700A8FE0F /* Project object */;
+}
